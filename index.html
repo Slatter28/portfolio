@@ -57,18 +57,18 @@
 
         </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper container">
         <section id="aboutMe" class="aboutMe">
-            <h2 class="about__title">Acerca de Mí</h2>
+            <h2 class="about__title">Sobre mí</h2>
             <p class="about__text">Persona carismática, responsable y dinámica, con facilidad de adaptación.
                 Disfruto del constante aprendizaje, lo cual ha significado para mi trayectoria
                 profesional, una gran ventaja en la medida en que presto especial interés a la
                 innovación y la mejora de las tareas y los procesos en los cuales me involucro.
             </p>
         </section>
-        <section id="skill">
+        <section class="skill" id="skill">
             <h2 class="skill_title">Habilidades</h2>
-            <div >
+            <div>
                 <div class="skill_container">
                     <div class="skill_item">
                         <i class="devicon-javascript-plain colored"></i>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </section>
         <!-- <section id="portfolio" class="portfolio">
             <h2 class="skill_title">Portafolio</h2>
@@ -166,6 +166,7 @@
         </section> -->
 
         <section class="portafolio" id="portfolio">
+            <h2 class="portafolio_title">Portafolio</h2>
             <div class="portafolio-grid">
                 <div class="portafolio-grid-item">
                     <div class="portafolio-grid-item__image">
@@ -192,8 +193,12 @@
                     <div class="portafolio-grid-item__image">
                         <img src="/1C2.jpg" alt="" />
                         <div class="image__icons">
-                            <button>hola</button>
-                            <button>hola</button>
+                            <button class="link1 links"><i class="bi bi-eye-fill"></i></button>
+                            <button class="link2 links">
+
+                                <i class="devicon-github-original"></i>
+
+                            </button>
                         </div>
                     </div>
                     <div class="portafolio-grid-item__summary">
@@ -209,8 +214,12 @@
                     <div class="portafolio-grid-item__image">
                         <img src="/1C2.jpg" alt="" />
                         <div class="image__icons">
-                            <button>hola</button>
-                            <button>hola</button>
+                            <button class="link1 links"><i class="bi bi-eye-fill"></i></button>
+                            <button class="link2 links">
+
+                                <i class="devicon-github-original"></i>
+
+                            </button>
                         </div>
                     </div>
                     <div class="portafolio-grid-item__summary">
@@ -226,8 +235,12 @@
                     <div class="portafolio-grid-item__image">
                         <img src="/1C2.jpg" alt="" />
                         <div class="image__icons">
-                            <button>hola</button>
-                            <button>hola</button>
+                            <button class="link1 links"><i class="bi bi-eye-fill"></i></button>
+                            <button class="link2 links">
+
+                                <i class="devicon-github-original"></i>
+
+                            </button>
                         </div>
                     </div>
                     <div class="portafolio-grid-item__summary">
@@ -243,42 +256,9 @@
                     <div class="portafolio-grid-item__image">
                         <img src="/1C2.jpg" alt="" />
                         <div class="image__icons">
-                            <button>hola</button>
-                            <button>hola</button>
-                        </div>
-                    </div>
-                    <div class="portafolio-grid-item__summary">
-                        <h6 class="summary__title">Titulo</h6>
-                        <p class="summary__info">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Repudiandae corrupti numquam laboriosam quibusdam sequi illum
-                            mollitia dolorum est facilis id architecto.
-                        </p>
-                    </div>
-                </div>
-                <div class="portafolio-grid-item">
-                    <div class="portafolio-grid-item__image">
-                        <img src="/1C2.jpg" alt="" />
-                        <div class="image__icons">
-                            <button>hola</button>
-                            <button>hola</button>
-                        </div>
-                    </div>
-                    <div class="portafolio-grid-item__summary">
-                        <h6 class="summary__title">Titulo</h6>
-                        <p class="summary__info">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Repudiandae corrupti numquam laboriosam quibusdam sequi illum
-                            mollitia dolorum est facilis id architecto.
-                        </p>
-                    </div>
-                </div>
-                <div class="portafolio-grid-item">
-                    <div class="portafolio-grid-item__image">
-                        <img src="/1C2.jpg" alt="" />
-                        <div class="image__icons">
-                            <button>hola</button>
-                            <button>hola</button>
+                            <button class="link1 links"><i class="bi bi-eye-fill"></i></button>
+                            <button class="link2 links"><i class="devicon-github-original"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="portafolio-grid-item__summary">
@@ -295,6 +275,14 @@
 
         <section id="contacto" class="contacto">
             <h2 class="skill_title">Contacto</h2>
+            <form class="form">
+                <!-- <div class="pageTitle title">Sign Up </div> -->
+                <div class="secondaryTitle title">Please fill this form to sign up.</div>
+                <input type="text" class="name formEntry" placeholder="Name" />
+                <input type="text" class="email formEntry" placeholder="Email"/>
+                <textarea class="message formEntry" placeholder="Message"></textarea>
+                <button class="submit formEntry" onclick="thanks()">SUBMIT</button>
+              </form>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
