@@ -41,7 +41,7 @@ form.addEventListener('submit', (e) => {
     method: 'POST',
     header: {
       'Content-Type': 'application/json',
-      Accept: 'application/json'
+      'Accept': 'application/json'
     },
     body: JSON.stringify(formData)
   }
