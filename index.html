@@ -27,14 +27,48 @@
   </head>
 
   <body>
+
+    <style>
+      /* :root {
+        --navbar-header: 60px;
+      }
+  
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+  
+      h1 {
+        text-align: center;
+      } */
+  
+    
+    </style>
+
+
     <header class="hero">
-      <nav class="hero__navbar">
-        <a href="#">Home</a>
-        <a href="#aboutMe   ">Acerca de mi</a>
-        <a href="#skill">Mis Habilidades</a>
-        <a href="#portfolio">Mis Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+      <div class="navbar">
+        <div class="navbar__interior">
+         
+          <div id="navbar__menu" class="navbar__menu">
+            <button id="navbar__cerrar" class="navbar__cerrar">
+              <i class='bx bx-x'></i>
+            </button>
+            <nav class="navbar__lista">
+              <a href="#" class="navbar__link">Inicio</a>
+              <a href="#aboutMe" class="navbar__link">Sobre Mí</a>
+              <a href="#skill" class="navbar__link">Mis Habilidades</a>
+              <a href="#portfolio" class="navbar__link">Mis Proyectos</a>
+              <a href="#contacto" class="navbar__link">Contacto</a>
+            </nav>
+          </div>
+          <div class="navbar__btn">
+            <button id="navbar__btn" class="navbar__btn-accion">
+              <i class='bx bx-menu'></i>
+            </button>
+          </div>
+        </div>  
+      </div>
       <div class="hero-container">
         <div id="particles-js"></div>
         <svg
@@ -134,60 +168,6 @@
           </div>
         </div>
       </section>
-      <!-- <section id="portfolio" class="portfolio">
-            <h2 class="skill_title">Portafolio</h2>
-
-            <ul class="portfolio_cards">
-                <li>
-                    <div href="" class="card">
-                        <img class="card__image" src="./assets/img/2DhmtJ4.jpg" />
-
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                <path />
-                            </svg>
-                            <div class="card_header-text">
-                                <h3 class="card__title">Jessica Parker</h3>
-                                <p class="card__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Quisquam explicabo illum labore saepe ducimus assumenda, culpa magnam a placeat
-                                    veritatis sit totam ipsum hic cum vitae. Omnis vitae quia maxime.</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </li>
-                <li>
-                    <div href="" class="card">
-                        <div class="card_content_img">
-                            <img class="card__image" src="./assets/img/2DhmtJ4.jpg" />
-                            <div class="primero">
-                                <a class="card_link" href="www.google">
-                                    <i class="devicon-github-original colored"></i>
-                                </a>
-                                <a class="card_link" href="www.google">
-                                    <i class="devicon-github-original colored"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card__header">
-                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                <path />
-                            </svg>
-                            <div class="card_header-text">
-                                <h3 class="card__title">Jessica Parker</h3>
-                                <p class="card__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Quisquam explicabo illum labore saepe ducimus assumenda, culpa magnam a placeat
-                                    veritatis sit totam ipsum hic cum vitae. Omnis vitae quia maxime.</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </li>
-            </ul>
-
-        </section> -->
 
       <section class="portafolio" id="portfolio">
         <h2 class="portafolio_title">Portafolio</h2>
@@ -302,15 +282,16 @@
 
       <section id="contacto" class="contacto">
         <h2 class="skill_title">Contacto</h2>
-        <form class="form">
+        <form class="form" id="form">
           <!-- <div class="pageTitle title">Sign Up </div> -->
           <div class="secondaryTitle title">
-            Please fill this form to sign up.
+           
           </div>
-          <input type="text" class="name formEntry" placeholder="Name" />
-          <input type="text" class="email formEntry" placeholder="Email" />
-          <textarea class="message formEntry" placeholder="Message"></textarea>
-          <button class="submit formEntry" onclick="thanks()">SUBMIT</button>
+          <input type="text" id="name" class="name formEntry" placeholder="Ingresa tu nombre" />
+          <input type="text" id="email" class="email formEntry" placeholder="Ingresa tu correo" />
+          <textarea  id="message" class="message formEntry" placeholder="Platícame tu idea "></textarea>
+          <!-- <button class="submit formEntry" >ENVIAR</button> -->
+          <input type="submit" class="submit formEntry" value="Enviar" />
         </form>
       </section>
     </main>
