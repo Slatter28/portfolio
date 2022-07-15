@@ -612,7 +612,7 @@ section {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .navbar {
     backdrop-filter: inherit;
     background-color: var(--surface-color);
