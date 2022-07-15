@@ -24,11 +24,11 @@ cerrar.addEventListener('click', (e) => {
 })
 
 
-form.addEventListener('submit', async (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault()
 
   const email = 'devytechsolutions@gmail.com'
-  const URL_BASE = `https://formsubmit.co/${email}`
+  const URL_BASE = `https://formsubmit.co/ajax/${email}`
 
   const input = e.currentTarget.elements
   const formData = {
@@ -37,7 +37,6 @@ form.addEventListener('submit', async (e) => {
     message: input.message.value
   }
 
-  console.log(formData)
   const options = {
     method: 'POST',
     header: {
@@ -54,11 +53,11 @@ form.addEventListener('submit', async (e) => {
     .catch(error => console.log(error))
 
   /* Con async / await */
-  try {
-    const res = await fetch(URL_BASE, options)
-    const data = await res.json()
-    console.log(data)
-  } catch (error) {
-    console.log(error)
-  }
+  // try {
+  //   const res = await fetch(URL_BASE, options)
+  //   const data = await res.json()
+  //   console.log(data)
+  // } catch (error) {
+  //   console.log(error)
+  // }
 })
